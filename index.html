@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" initial-scale=1.0>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="calsi" id="calculator">
+        <div class="screen">
+            <input type="text" name="text" id="text" disabled>
+        </div>
+
+        <div class="button" id="buttons">
+            <ul>
+                <button onclick="enterVal('7')" id="7" value="7" class="key">7</button>
+                <button onclick="enterVal('8')" id="8" value="8" class="key">8</button>
+                <button onclick="enterVal('9')" id="9" value="9" class="key">9</button>
+                <button onclick="enterVal('*')" id="×" value="*" class="func">×</button>
+                <button onclick="clearVal()" id="C" value="C" class="clear">C</button>
+            </ul>
+            <ul>
+                <button onclick="enterVal('4')" id="4" value="4" class="key">4</button>
+                <button onclick="enterVal('5')" id="5" value="5" class="key">5</button>
+                <button onclick="enterVal('6')" id="6" value="6" class="key">6</button>
+                <button onclick="enterVal('/')" id="÷" value="/" class="func">÷</button>
+                <button onclick="revVal()" id="back" value="🔙" class="back">🔙</button>
+            </ul>
+            <ul>
+                <button onclick="enterVal('1')" id="1" value="1" class="key">1</button>
+                <button onclick="enterVal('2')" id="2" value="2" class="key">2</button>
+                <button onclick="enterVal('3')" id="3" value="3" class="key">3</button>
+                <button onclick="enterVal('-')" id="-" value="-" class="func">-</button>
+                <button onclick="dMode()" id="darkModeButton" value="🔘" class="dark-mode">🔘</button>
+            </ul>
+            <ul>
+                <button onclick="enterVal('0')" id="0" value="0" class="key">0</button>
+                <button onclick="enterVal('.')" id="." value="." class="key">.</button>
+                <button onclick="enterVal('00')" id="00" value="00" class="key">00</button>
+                <button onclick="enterVal('+')" id="+" value="+" class="func">+</button>
+                <button onclick="solution('=')" id="=" value="=" class="solution">=</button>
+            </ul>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>
